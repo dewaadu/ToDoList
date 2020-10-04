@@ -1,10 +1,12 @@
 body{
-  background-color:orange;
+  background-color:#b2ebf2;
 }
 p{
   display: inline;
 font-size: 30px;
 margin-left: 20px;
+}p:focus{
+  outline: none;
 }
 .inputText{
   border-top: none;
@@ -26,7 +28,7 @@ h1{
   padding-bottom: 20px;
   font-size: 2rem;
   text-align: center;
-  background-color: yellow;
+  background-color:#2ec1ac;
   margin-left: -50px;
 
 }button{

@@ -10,7 +10,7 @@ function ToDoItems(props){
     }
 
     return <div> 
-        <input className="checkbox" onClick={crossItem} type="checkbox"/> <p style={{textDecoration:isDone?"line-through":"none",fontWeight:isDone?"100":"none"}}>{props.text}</p></div>
+        <input className="checkbox" onClick={crossItem} type="checkbox"/> <p contentEditable="true" style={{textDecoration:isDone?"line-through":"none",fontWeight:isDone?"100":"none"}}>{props.text}</p></div>
        
 }
 export default ToDoItems;
