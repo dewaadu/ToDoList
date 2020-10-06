@@ -31,7 +31,7 @@ h1{
   background-color:#2ec1ac;
   margin-left: -50px;
 
-}button{
+}.button-add{
   
   height: 60px;
   width: 60px;
@@ -69,7 +69,15 @@ margin-right: 400px;
 }
 .checkbox{
   margin-bottom: 30px;
-}
+  }
+.btn-delete{
+  
+  border-color: yellow;
+  border-width: 1px;
+  background-color:#087e8b;
+  color:yellow;
+  
+  }
 @media(max-device-width:500px){
   .container{
     margin-left: 25px;

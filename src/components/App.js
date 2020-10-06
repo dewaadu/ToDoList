@@ -21,7 +21,15 @@ setInputText(newValue);
       console.log("err");
     }
     }
-   
+    function deleteItem(id){
+      setItems((previtems)=>{
+return previtems.filter(
+  (item,index)=>{
+return index!==id;
+  }
+);
+      });
+    }
   
   return (
     <div className="container">
@@ -39,11 +47,15 @@ setInputText(newValue);
 key={index}
 id={index} 
 text={ToDOitem}
+onchecked={deleteItem}
+
 />
         ))}
+      
       </ul>
+     
     </div>
-    <button onClick={handleClick}> <span>+</span></button>
+    <button className="button-add" onClick={handleClick}> <span>+</span></button>
 
     </div>
   );
